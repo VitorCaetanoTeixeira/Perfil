@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.container {
+    width: 96%;
+}
+menu ul {
+     text-align: center;
+ }
+menu {
+    position: static;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+header#cabecalho-menu img#icone {
+    max-width: 50%;
+}
+

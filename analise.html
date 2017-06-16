@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça sua incrição.</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="_css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/testefree.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/analise.css"/>
+    <link rel="stylesheet" media="(max-width:320px)" href="_css/mobile.css"/>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+     <script type="text/javascript">
+    function modal(){
+                  var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            $('#mask').css({'width':maskWidth,'height':maskHeight});
+
+            $('#mask').fadeIn(1000);
+            $('#mask').fadeTo("slow",0.9);
+
+            //Get the window height and width
+            var winH = $(window).height();
+            var winW = $(window).width();
+
+            $('#dialog2').css('top',  winH/2-$('#dialog2').height()/2);
+            $('#dialog2').css('left', winW/2-$('#dialog2').width()/2);
+
+            $('#dialog2').fadeIn(2000);
+
+
+    }
+        $(document).ready(function() {
+               // modal();
+            $('.window .close').click(function (e) {
+                e.preventDefault();
+
+                $('#mask').hide();
+                $('.window').hide();
+            });
+
+            $('#mask').click(function () {
+                $(this).hide();
+                $('.window').hide();
+            });
+
+        });
+       
+    </script>
+
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $('a[name=modal]').click(function(e) {
+                e.preventDefault();
+
+                var id = $(this).attr('href');
+
+                var maskHeight = $(document).height();
+                var maskWidth = $(window).width();
+
+                $('#mask').css({'width':maskWidth,'height':maskHeight});
+
+                $('#mask').fadeIn(1000);
+                $('#mask').fadeTo("slow",0.8);
+
+                //Get the window height and width
+                var winH = $(window).height();
+                var winW = $(window).width();
+
+                $(id).css('top',  winH/2-$(id).height()/2);
+                $(id).css('left', winW/2-$(id).width()/2);
+
+                $(id).fadeIn(2000);
+
+            });
+
+            $('.window .close').click(function (e) {
+                e.preventDefault();
+
+                $('#mask').hide();
+                $('.window').hide();
+            });
+
+            $('#mask').click(function () {
+                $(this).hide();
+                $('.window').hide();
+            });
+
+
+        });
+
+    </script>
+    <style type="text/css">
+
+        #mask {
+            position:fixed;
+            left:0;
+            top:0;
+            z-index:1;
+            background: #000;
+            display:none;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #boxes .window {
+            position:absolute;
+            width:900px;
+            height:auto;
+            display:none;
+            z-index:99999;
+            padding:2px;
+            background-color: white;
+            padding: 2%;
+            border-radius: 10px;
+            font-size: 1.1em;
+        }
+
+        #boxes #dialog2 {
+
+            width:70%;
+            position: fixed;
+
+        }
+
+        .close{
+            width: 2%;
+            display:block;
+            color: #2a2a2a;
+            font-size: 13pt;
+            font-family: FontLogoB;
+        }
+
+        .close:hover {
+            color: #f29b13;
+            transition: all .4s;
+        }
+
+        @media (max-width: 800px) {
+            #boxes .window {
+                font-size: 0.9em;
+                width: 90%;
+                font-family: 'FontLogoB';
+            }
+
+            #boxes .window p {
+                font-family: 'FontLogoB';
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="boxes">
+    <!-- Janela Modal com Bloco de Nota -->
+    <div id="dialog2" class="window";>
+        <a class="close" href="#">X</a>
+        <p><h1>Os campos de atuação desta ferramenta são:</h1></p>
+<p><h2>Compreensão do comportamento do profissional:</h2> entenda a maneira como um profissional se comporta, como ele trabalha em situações de alta pressão, como motivar essa pessoa e sua conduta;</p>
+
+<p><h2>Construção de equipes:</h2> aumente a produtividade dos trabalhos com uma equipe que nasceu para aquele grupo de atividades. Mostre ao grupo os pontos fortes e a desenvolver de cada membro da equipe. Equilibre sua equipe com profissionais que tenham perfis que se completem. Evite empasses por falta de afinidade ou divergência de comportamento.</p>
+
+<p><h2>Motivação:</h2> trabalhe os pontos fortes dos membros de sua equipe. Maximize o comprometimento das pessoas. Aumente a energia e o engajamento dos seus profissionais. Identifique e compreenda as atitudes/atividades que motivam seus colaboradores.</p>
+
+<p><h2>Gerenciamento:</h2> conduza sua equipe de maneira eficiente. Construa um gerenciamento efetivo de relações interpessoais e profissionais. Mapeie os diferentes perfis comportamentais e entenda em qual colocação profissional a pessoa estará apta a desempenhar seu trabalho com excelência.</p>
+
+<p>Todas essas soluções são entregues em formato de relatório com devolutiva e treinamento para os líderes. O relatório contempla mais de 50 informações importantes e diferentes sobre o profissional, como: melhor área de atuação, forma de atuação, influência no ambiente de trabalho, forma de tomada de decisão, perfil predominante, adequação atual à função exercida e muito mais. A devolutiva é realizada com o profissional mapeado, validando seu perfil comportamental. O treinamento é aplicado ao líder da área, para que o mesmo possa entender os perfis existentes dentro da equipe e, dessa maneira, aplicar as melhores soluções, como: motivação, remanejamento, feedbacks poderosos e estímulos para resultados extraordinários.</p>
+    </div>
+</div>
+<!-- Fim Janela Modal com Bloco de Nota -->
+<!-- Máscara para cobrir a tela -->
+<div id="mask"></div>
+<div id="container-analise">
+<div id="cabecalho3">
+    <header class="topo-analise">
+        <a href="index.html"><img class="logo-analise" src="_imagens/logotipo.png"></a>
+        <span id="text-analise"><i>#garantajáoseuTESTE</i><br/><br/></span>
+    </header>
+</div>
+    <div id="ebook">
+        <div id="form-ebook">
+    <input class="input-ebook" type='email' id="tMail" placeholder="&nbsp;Siga seu Perfil" style="font-size:9pt">
+    <input class="input-ebook"  type='email' id="tMail" placeholder="&nbsp;Coloque seu e-mail" style="font-size:9pt">
+    <input type="submit" id="calc" value="Enviar"></div>
+    </div>
+    <div id="corpo-analise">
+        <div id="container-img-perfis" align="center">
+        <a style="cursor:pointer"><img id="img-perfis" name="nComunicador" src="_imagens/comunicador.png"/></a>
+        <a style="cursor:pointer"><img id="img-perfis" name="nExecutor" src="_imagens/executor.png"/></a>
+        <a style="cursor:pointer"><img id="img-perfis" name="nPlanejador" src="_imagens/planejador.png"/></a>
+        <a style="cursor:pointer"><img id="img-perfis" name="nAnalista" src="_imagens/analista.png"/></a></div>
+       <!-- <iframe class="iframe-analise" src="infos.html" name="janela"></iframe>-->
+        <div id="texto">       
+                    <article id="topo"><header><h1>&nbsp;&nbsp;&nbsp;Clique nos PERFIS para saber mais.</h1><br/><br/><br/><br/></header></article>
+            <article id="comunicador" hidden><div id="comunicador1"><header><h1 style="color:#f29b13"> O Comunicador</h1></header>
+                <p>Pessoas com um perfil predominantemente comunicador são mais despachadas, exercem influência e empatia sobre os demais e tendem a ser criativos e comunicativos. Essas pessoas podem ser utilizadas como instrumentos de sociabilização em equipes, tornando seus membros mais unidos e gerando um ambiente mais leve, onde a comunicação se dá de maneira mais natural.</p>
+
+        <p>A inserção deve ser feita com cuidado, pois embora comunicadores imprimam ritmo e energia, eles não necessariamente primam por resultados e têm sérias dificuldades em cumprir com cronogramas, normas e procedimentos. Ele é forte para motivar, mas dificilmente para seguir algo à risca.</p>
+                <p>Equipes com poucos comunicadores tendem a não se comunicar bem com os demais departamentos da empresa, possuem moral mais baixo e não desempenham tarefas de forma vibrante ou empolgante. A falta de comunicadores pode ainda minar a autoconfiança da equipe.</p>
+
+        <p>Por outro lado, equipes que possuem um caráter comunicador muito forte podem prometer mais do que realmente são capazes de cumprir, tendem a ignorar determinações superiores e de outros departamentos e possui um caráter impulsivo e com pouco autocontrole. A organização é geralmente falha e atrasos são constantes em entregas e compromissos – diversos projetos podem sequer ser concluídos, uma vez que pessoas com esse perfil se aborrecem facilmente e perdem o interesse por uma atividade ou meta.</p>
+                <p>As possibilidades são incontáveis e, mesmo contando com apenas quatro tipos de perfis, e para que você possa compreender e localizar onde estão os focos de problemas, é necessário que testes sejam realizados com frequência.</p>
+            </div></article>
+            <article id="executor" hidden><div id="executor1"><header><h1 style="color:#d9422a">O Executor</h1></header>
+                <p>Equipes com muitos executores geralmente perseguem resultados de forma frenética. As pessoas com esse caráter são objetivas e diretas, não perdem tempo com minúcias e concentram todos os esforços na realização de uma tarefa.</p>
+
+        <p>São determinados e raramente desistem de um objetivo, mesmo quando ele parece se provar inatingível ou desnecessário. Os desafios e a ambição são geralmente os motores que impelem os executores adiante, que além disso precisam de alguma liberdade de ação para que se desenvolvam.</p>
+                <p>Executores geralmente trabalham com independência e sem supervisão ou companhia de pessoas com um perfil de analista tendem a agir conforme suas próprias regras e princípios, embora sempre em nome dos resultados.</p>
+
+        <p>Equipes com um perfil excessivamente executor provavelmente cumprirão com suas metas, porém não seguirão os ditames da empresa e, ao mesmo tempo, deixarão de trabalhar em conjunto com outros departamentos, ou até mesmo de forma dispersa dentro de um mesmo time. Não chegam a ser “anarquistas”, mas confiam excessivamente em suas próprias capacidade e raramente contam com o auxílio ou o suporte de outras áreas ou profissionais que possam melhorar ou aprimorar seu trabalho.</p>
+
+        <p>Por outro lado, equipes que careçam de executores tendem a ser menos empreendedoras e costumam hesitar muito antes de tomar decisões. Essas equipes também podem se sentir acuadas e intimidadas não apenas frente às metas, mas em relação a clientes ou fornecedores.</p>
+            </div></article>
+            <article id="planejador" hidden><div id="planejador1"><header><h1 style="color:#3fe324">O Planejador</h1></header>
+                <p>Planejadores são calmos e confiáveis e, embora menos comunicativos, tendem a ser de fácil convivência. Evitam conflitos diretos e possuem um exacerbado senso de justiça. Na execução de tarefas agem com tranquilidade, mas podem postergar ou adiar realizações em nome de um melhor planejamento ou estratégia, independentemente da urgência de resultados.</p>
+
+        <p>Essas pessoas influem em um grupo de modo a estabilizar conflitos e aproximar todos de um ponto de equilíbrio. Geralmente fiel à empresa, o planejador é um bom veículo de contato e acompanhamento dentro de uma equipe, informando e dando feedbacks. Seu pessimismo e receio, contudo, é um ponto a ser trabalhado – o que pode ser atenuado com a presença de um forte comunicador em um mesmo grupo.</p>
+                 <p>Equipes com planejadores não causam problemas, são excelentes em reportar, mas dificilmente produzem resultados impressionantes. Muitas das decisões acabam não sendo tomadas e permanecem sendo reavaliadas até que alguém com um perfil mais dominante tome as rédeas da situação. Por outro lado, quando perfis mais ativos não se manifestam, planejadores podem inclusive atuar de maneira reversa, desmotivando pessoas e causando problemas, especialmente na ocorrência de mudanças.</p>
+            </div></article>
+            <article id="analista" hidden><div id="analista1"><header><h1 style="color:#0b7be3">O Analista</h1></header>
+                <p>Os analistas nunca deixam passar detalhes – para eles tudo precisa ser feito com método, cumprindo detalhes, seguindo passo a passo e oferecendo segurança, garantias e perfeccionismo. É para pessoas com esse perfil que a pressão tem o efeito mais devastador. Quando excessivamente pressionados, os analistas se fecham ou saem de cena, deixando tudo para trás.</p>
+
+        <p>Equipes que demandam um alto grau de especialização tendem a possuir muitos analistas. Sob o aspecto positivo, esses times desenvolvem trabalhos irretocáveis, sem erros e com precisão cirúrgica. Entretanto, sem comando ou decisão, tendem a perder tempo demais desenvolvendo algo que não precisa ser levado à risca ou conter todos os detalhes.</p>
+                 <p>Seu excesso de cautela pode levar a situações de depressão quando, posteriormente, parte de seu trabalho é simplesmente ignorado em nome da produtividade.</p>
+
+        <p>Equipes predominantemente analíticas podem ser indecisas, pouco práticas e de difícil convivência para outros times. O excesso de orgulho é outro dos problemas e, por mais que o trabalho ou a criação de um analista seja perfeita, ele geralmente enxergará seu próprio trabalho de um modo extremamente crítico.</p>
+
+        <p>Contudo, especialmente em áreas ligadas ao conhecimento e à pesquisa, a falta de analistas podem criar resultados inúteis, sem ciência, imperfeitos e mal realizados.  A partir daí, o analista passa a achar que todos o estão perseguindo.</p>
+            </div></article>
+        </div>
+    </div>
+    </div>
+    <div id="produtos1">
+        <div id="testes-buy">
+            <header id="titulo-buy"><h1>CONHEÇA MAIS SOBRE AS NOSSAS SOLUÇÕES</h1></header>
+            <div id="teste-simples"><p><h1>Para você</h1><!--</p>
+<p>Nossa análise comportamental utiliza de um moderno sistema de identificação de perfil profissional e comportamental, que pode ser usada tanto para a seleção de candidatos, remanejamento de profissionais, construção de equipes quanto para gestão motivacional de um time.</p>
+<p>As principais soluções oferecidas para sua empresa são divididas em quatro campos de atuação: compreensão, construção de equipes, motivação e gerenciamento. No mundo moderno, está claro e disseminado a ideia de que grandes empresas são construídas com grandes profissionais, porém, se esses profissionais não estiverem em seus lugares corretos, as chances do sucesso acontecer são mínimas.</p>--><button>Saiba +</button><a href="">Descubra e mapeie quais os perfis de seus profissionais.</a></div><div id="teste-completo"><p><h1>Para sua empresa</h1></p>
+<p>Nossa análise comportamental utiliza de um moderno sistema de identificação de perfil profissional e comportamental, que pode ser usada tanto para a seleção de candidatos, remanejamento de profissionais, construção de equipes quanto para gestão motivacional de um time.</p>
+<p>As principais soluções oferecidas para sua empresa são divididas em quatro campos de atuação: compreensão, construção de equipes, motivação e gerenciamento. No mundo moderno, está claro e disseminado a ideia de que grandes empresas são construídas com grandes profissionais, porém, se esses profissionais não estiverem em seus lugares corretos, as chances do sucesso acontecer são mínimas.</p><button onclick="modal()">Saiba+</button><a href="">Descubra e mapeie quais os perfis de seus profissionais.</a></div>
+        </div><br/><br/>
+      <table align="center"><td><img width="100%" src="_imagens/parceria.png"/></td></table>
+    </div>
+    <div id="rodape-analise">
+        <footer id="rodape-analise1">
+            <table align="center" height="200px" width="80%">
+                <td><a href="index2.html"><img class="img-analise" src="_imagens/logorodape.png"/></a>
+                    <p class="p1">&nbsp;&nbsp;&nbsp;Copyright &copy; 2017.<br/>
+                    &nbsp;&nbsp;&nbsp;Todos os direitos reservados.</p></td>
+                    <td width="25%" class="td8"><a class="link-back" href="index.html"><i>&#171; Volte para o site.</i><a></td>
+            </table>
+        </fooer>
+    </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+   
+    $("img[name=nComunicador]").click(function(){
+        $("#topo").hide();
+        $("#executor").hide();
+        $("#analista").hide();
+        $("#planejador").hide();
+        $("#comunicador").slideDown("slow");
+    });
+      $("img[name=nExecutor]").click(function(){
+        $("#topo").hide();
+        $("#comunicador").hide();
+        $("#analista").hide();
+        $("#planejador").hide();
+        $("#executor").slideDown("slow");
+    });
+        $("img[name=nAnalista]").click(function(){
+        $("#topo").hide();
+        $("#executor").hide();
+        $("#comunicador").hide();
+        $("#planejador").hide();
+        $("#analista").slideDown("slow");
+    });
+          $("img[name=nPlanejador]").click(function(){
+        $("#topo").hide();
+        $("#executor").hide();
+        $("#analista").hide();
+        $("#comunicador").hide();
+        $("#planejador").slideDown("slow");
+    });
+});
+</script>
+</body>
+</html>

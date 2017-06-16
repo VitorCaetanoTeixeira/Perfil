@@ -1,0 +1,148 @@
+@charset "UTF-8";
+fieldset {
+    border: none;
+}
+
+iframe {
+
+}
+
+form {
+
+}
+
+
+.section-heading {
+    font-size: 2em;
+    font-family: 'FontLogoB';
+    margin-bottom: 1%;
+}
+
+.btn-contato {
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1.5%;
+    font-family: 'FontLogoB';
+    font-size: 1.5em;
+    padding: 1%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+}
+
+.adress {
+    font-size: 2em;
+}
+
+input, textarea {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    height: 4em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1%;
+}
+
+p {
+}
+
+fieldset {
+    border: none;
+    color: white;
+}
+
+legend {
+    font-size: 20pt;
+    border-radius: 10px;
+    margin: 0.5em;
+    text-align: center;
+    font-family: Arial;
+    color: #2a2a2a;
+}
+
+
+#cName {
+    height: 3em;
+}
+
+#cEmail {
+    height: 3em;
+}
+
+#cTelefone {
+    height: 3em;
+}
+
+#cMensagem {
+    height: 10em;
+}
+
+@media screen and (max-width:800px) {
+    form {
+    margin: 0 auto;
+}
+
+input {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 9pt;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+    height: 3em;
+
+}
+
+textarea {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 9pt;
+    font-weight: normal;
+    border-radius: 5px;
+    border: none;
+    width: 90%;
+}
+
+fieldset {
+    border: none;
+    color: white;
+}
+
+legend {
+    font-size: 2em;
+    border-radius: 1em;
+    margin: 0.5em;
+    padding-left: 2%;
+    text-align: center;
+    font-family: Arial;
+    color: #2a2a2a;
+}
+
+.mapa1 {
+
+}
+
+.mapa2 {
+    font-size: 1.5em;
+    text-align: right;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+.btn-contato {
+    font-size: 12pt;
+    background-color: #2a2a2a;
+    margin: 0;
+    width: 90%;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 0.5em;
+    text-align: center;
+}
+#table-map {
+    margin:0;
+}
+}

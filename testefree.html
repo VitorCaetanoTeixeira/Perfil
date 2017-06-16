@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu teste grátis</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap1.css">
+    <link rel="stylesheet" type="text/css" href="_css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/testefree.css"/>
+    <style type="text/css">
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    #q1 {
+        border: none;
+    }
+
+    #container {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-md-3 ul {
+    list-style: none;
+    text-decoration: uppercase;
+}
+
+.col-md-3 img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.col-md-3 {
+    margin-bottom: 2%;
+}
+
+titulo {
+    font-size: 3em;
+    margin-left: 2%;
+    font-family: 'FontLogoB';
+}
+
+    #aguia {
+        background-color: #3fe324;
+        padding: 10%;
+        border-radius: 30px;
+        color: white;
+        height: 30em;
+        font-size: 2em;
+    }
+
+    #gato {
+        background-color: #f29b13;
+        padding: 10%;
+        border-radius: 30px;
+        color: white;
+        height: 30em;
+        font-size: 2em;
+    }
+
+    #lobo {
+        background-color: #0b7be3;
+        padding: 10%;
+        border-radius: 30px;
+        color: white;
+        height: 30em;
+        font-size: 2em;
+    }
+
+    #tubarao {
+        background-color: #d9422a;
+        padding: 10%;
+        border-radius: 30px;
+        color: white;
+        height: 30em;
+        font-size: 2em;
+    }
+
+    fieldset {
+        border: none;
+        font-size: 1.5em;
+    }
+
+    #calc{
+        background-color: #f29b13;
+        color: white;
+        font-family: FontLogo;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+
+</head>
+<body>
+<div id="container-testefree">
+<div id="cabecalho2">
+    <header class="topo-testefree">
+        <a href="index.html"><img class="logo-topo-free" src="_imagens/logorodape.png"></a>
+        <span id="text-topo"><i>#sigaseuPERFiL</i><br/><br/></span>
+    </header>
+</div>
+    <div id="corpo-testefree">
+        <div><br><br><br>
+<h1>Avaliação de Perfil Comportamental</h1>
+
+<p id="ttl"><h2>Por Ned Hermman</h2></p>
+
+<p id="ttl" style="font-size:1.3em;">Em cada uma das 25 questões a seguir, escolha uma alternativa (I, C, O ou A) e marque-a  no espaço correspondente.</p>
+<div id="erro"></div>
+<fieldset id="q1">
+    <div class="questao" > 
+    <b>1.</b>  Eu sou...
+        <div class="radio">
+            <input type="radio" name="q1" id="txt1" value="I">
+            <label for="txt1">I - Idealista, criativo e visionário </label> <br>
+            <input type="radio" name="q1" id="txt2" value="C">
+            <label for="txt2">C - Divertido, espiritual e benéfico</label> <br>
+            <input type="radio" name="q1" id="txt3" value="O">
+            <label for="txt3">O - Confiável, meticuloso e previsível</label> <br>
+            <input type="radio" name="q1" id="txt4" value="A">
+            <label for="txt4">A - Focado, determinado e persistente</label> 
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q2" hidden>
+    <div class="questao"> 
+    <b>2.</b> Eu gosto de...
+        <div class="radio">
+            <input type="radio" name="q2" id="txt5" value="A">
+            <label for="txt5">A - Ser piloto </label> <br>
+            <input type="radio" name="q2" id="txt6" value="C">
+            <label for="txt6">C - Conversar com os passageiros</label> <br>
+            <input type="radio" name="q2" id="txt7" value="O">
+            <label for="txt7">O - Planejar a viagem </label> <br>
+            <input type="radio" name="q2" id="txt8" value="I">
+            <label for="txt8">I - Explorar novas rotas </label> <br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q3">
+    <div class="questao"> 
+    <b>3.</b> Se você quiser se dar bem comigo...
+        <div class="radio">
+            <input type="radio" name="q3" id="txt9" value="I">
+            <label for="txt9">I - Me dê liberdade</label> <br>
+            <input type="radio" name="q3" id="txt10" value="O">
+            <label for="txt10">O - Me deixe saber sua expectativa</label> <br>
+            <input type="radio" name="q3" id="txt11" value="A">
+            <label for="txt11">A - Lidere, siga ou saia do caminho</label> <br>
+            <input type="radio" name="q3" id="txt12" value="C">
+            <label for="txt12">C - Seja amigável, carinhoso e compreensivo</label> <br>
+
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q4">
+    <div class="questao"> 
+    <b>4.</b> Para conseguir obter bons resultados é preciso...
+        <div class="radio">
+            <input type="radio" name="q4" id="txt13" value="I">
+            <label for="txt13">I - Ter incertezas</label><br>
+            <input type="radio" name="q4" id="txt14" value="O">
+            <label for="txt14">O - Controlar o essencial</label><br>
+            <input type="radio" name="q4" id="txt15" value="C">
+            <label for="txt15">C - Diversão e celebração</label><br>
+            <input type="radio" name="q4" id="txt16" value="A">
+            <label for="txt16">A - Planejar e obter recursos</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q5">
+    <div class="questao"> 
+    <b>5.</b> Eu me divirto quando...
+        <div class="radio">
+            <input type="radio" name="q5" id="txt17" value="A">
+            <label for="txt17">A - Estou me exercitando</label><br>
+            <input type="radio" name="q5" id="txt18" value="I">
+            <label for="txt18">I - Tenho novidades</label><br>
+            <input type="radio" name="q5" id="txt19" value="C">
+            <label for="txt19">C - Estou com os outros</label><br>
+            <input type="radio" name="q5" id="txt20" value="O">
+            <label for="txt20">O - Determino as regras</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q6">
+    <div class="questao"> 
+    <b>6.</b> Eu penso que...
+        <div class="radio">
+            <input type="radio" name="q6" id="txt21" value="C">
+            <label for="txt21">C - Unidos venceremos, divididos perderemos</label><br>
+            <input type="radio" name="q6" id="txt22" value="A">
+            <label for="txt22">A - O ataque  é melhor que a defesa</label><br>
+            <input type="radio" name="q6" id="txt23" value="I">
+            <label for="txt23">I - É bom ser manso, mas andar com um porrete</label><br>
+            <input type="radio" name="q6" id="txt24" value="O">
+            <label for="txt24">O - Um homem prevenido vale por dois</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q7">
+    <div class="questao"> 
+    <b>7.</b> Minha preocupação é...
+        <div class="radio">
+            <input type="radio" name="q7" id="txt25" value="I">
+            <label for="txt25">I - Gerar a ideia global</label><br>
+            <input type="radio" name="q7" id="txt26" value="C">
+            <label for="txt26">C - Fazer com que as pessoas gostem</label><br>
+            <input type="radio" name="q7" id="txt27" value="O">
+            <label for="txt27">O - Fazer com que funcione</label><br>
+            <input type="radio" name="q7" id="txt28" value="A">
+            <label for="txt28">A - Fazer com que aconteça</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q8">
+    <div class="questao"> 
+    <b>8.</b> Eu prefiro...
+        <div class="radio">
+            <input type="radio" name="q8" id="txt29" value="I">
+            <label for="txt29">I - Perguntas a respostas</label><br>
+            <input type="radio" name="q8" id="txt30" value="O">
+            <label for="txt30">O - Ter todos os detalhes</label><br>
+            <input type="radio" name="q8" id="txt31" value="A">
+            <label for="txt31">A - Vantagens a meu favor</label><br>
+            <input type="radio" name="q8" id="txt32" value="C">
+            <label for="txt32">C - Que todos tenham  a chance de serem ouvidos</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q9">
+    <div class="questao"> 
+        <b>9.</b> Eu gosto de...
+        <div class="radio">
+            <input type="radio" name="q9" id="txt33" value="A">
+            <label for="txt33">A - Fazer progresso</label><br>
+            <input type="radio" name="q9" id="txt34" value="I">
+            <label for="txt34">I - Construir memórias</label><br>
+            <input type="radio" name="q9" id="txt35" value="O">
+            <label for="txt35">O - Fazer sentido</label><br>
+            <input type="radio" name="q9" id="txt36" value="C">
+            <label for="txt36">C - Tornar as pessoas confortáveis</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q10">
+    <div class="questao"> 
+    <b>10.</b> Eu gosto de chegar...
+        <div class="radio">
+            <input type="radio" name="q10" id="txt37" value="A">
+            <label for="txt37">A - Na frente</label><br>
+            <input type="radio" name="q10" id="txt38" value="C">
+            <label for="txt38">C - Junto</label><br>
+            <input type="radio" name="q10" id="txt39" value="O">
+            <label for="txt39">O - Na hora</label><br>
+            <input type="radio" name="q10" id="txt40" value="I">
+            <label for="txt40">I - Em outro lugar</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q11">
+    <div class="questao"> 
+    <b>11.</b> Um ótimo dia para mim é quando...
+        <div class="radio">
+            <input type="radio" name="q11" id="txt41" value="A">
+            <label for="txt41">A - Consigo fazer muitas coisas</label><br>
+            <input type="radio" name="q11" id="txt42" value="C">
+            <label for="txt42">C - Me divirto com meus amigos</label><br>
+            <input type="radio" name="q11" id="txt43" value="O">
+            <label for="txt43">O - Tudo segue conforme planejado</label><br>
+            <input type="radio" name="q11" id="txt44" value="I">
+            <label for="txt44">I - Desfruto de coisas novas e estimulantes</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q12">
+    <div class="questao"> 
+    <b>12.</b> Eu vejo a morte como...
+        <div class="radio">
+            <input type="radio" name="q12" id="txt45" value="I">
+            <label for="txt45">I - Uma grande aventura misteriosa</label><br>
+            <input type="radio" name="q12" id="txt46" value="C">
+            <label for="txt46">C - Oportunidade para rever os falecidos</label><br>
+            <input type="radio" name="q12" id="txt47" value="O">
+            <label for="txt47">O - Um modo de receber recompensas</label><br>
+            <input type="radio" name="q12" id="txt48" value="A">
+            <label for="txt48">A - Algo que sempre chega muito cedo</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q13">
+    <div class="questao"> 
+    <b>13.</b> Minha filosofia de vida é...
+        <div class="radio">
+            <input type="radio" name="q13" id="txt49" value="A">
+            <label for="txt49">A - Há ganhadores e perdedores, e eu acredito ser um ganhador</label><br>
+            <input type="radio" name="q13" id="txt50" value="C">
+            <label for="txt50">C - Para eu ganhar, ninguém precisa perder</label><br>
+            <input type="radio" name="q13" id="txt51" value="O">
+            <label for="txt51">O - Para ganhar é preciso seguir as regras</label><br>
+            <input type="radio" name="q13" id="txt52" value="I">
+            <label for="txt52">I - Para ganhar, é necessário inventarnovas regras</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q14"> 
+    <div class="questao"> 
+    <b>14.</b> Eu sempre gostei de...
+        <div class="radio">
+            <input type="radio" name="q14" id="txt53" value="I">
+            <label for="txt53">I - Explorar</label><br>
+            <input type="radio" name="q14" id="txt54" value="O">
+            <label for="txt54">O - Evitar surpresas</label><br>
+            <input type="radio" name="q14" id="txt55" value="A">
+            <label for="txt55">A - Focalizar a meta</label><br>
+            <input type="radio" name="q14" id="txt56" value="C">
+            <label for="txt56">C - Realizar uma abordagem natural</label><br>
+        </div>
+</div>
+</fieldset>
+<fieldset hidden id="q15">
+    <div class="questao"> 
+    <b>15.</b> Eu gosto de mudanças se...
+        <div class="radio">
+            <input type="radio" name="q15" id="txt57" value="A">
+            <label for="txt57">A - Me der uma vantagem competitiva</label><br>
+            <input type="radio" name="q15" id="txt58" value="C">
+            <label for="txt58">C - For divertido e puder ser compartilhado</label><br>
+            <input type="radio" name="q15" id="txt59" value="I">
+            <label for="txt59">I - Me der mais liberdade e variedade</label><br>
+            <input type="radio" name="q15" id="txt60" value="O">
+            <label for="txt60">O - Melhorar ou me der mais controle</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q16">
+    <div class="questao"> 
+    <b>16.</b> Não existe nada de errado em...
+        <div class="radio">
+            <input type="radio" name="q16" id="txt61" value="A">
+            <label for="txt61">A - Se colocar na frente</label><br>
+            <input type="radio" name="q16" id="txt62" value="C">
+            <label for="txt62">C - Colocar os outros na frente</label><br>
+            <input type="radio" name="q16" id="txt63" value="I">
+            <label for="txt63">I - Mudar de ideia</label><br>
+            <input type="radio" name="q16" id="txt64" value="O">
+            <label for="txt64">O - Ser consistente</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden  id="q17">
+    <div class="questao"> 
+    <b>17.</b> Eu gosto de buscar conselhos de...
+        <div class="radio">
+            <input type="radio" name="q17" id="txt65" value="A">
+            <label for="txt65">A - Pessoas bem-sucedidas</label><br>
+            <input type="radio" name="q17" id="txt66" value="C">
+            <label for="txt66">C - Anciões e conselheiros</label><br>
+            <input type="radio" name="q17" id="txt67" value="O">
+            <label for="txt67">O - Autoridades no assunto</label><br>
+            <input type="radio" name="q17" id="txt68" value="I">
+            <label for="txt68">I - Lugares, os mais estranhos</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden  id="q18">
+    <div class="questao"> 
+    <b>18.</b> Meu lema é...
+        <div class="radio">
+            <input type="radio" name="q18" id="txt69" value="I">
+            <label for="txt69">I - Fazer o que precisa ser feito</label><br>
+            <input type="radio" name="q18" id="txt70" value="O">
+            <label for="txt70">O - Fazer bem feito</label><br>
+            <input type="radio" name="q18" id="txt71" value="C">
+            <label for="txt71">C - Fazer junto com o grupo</label><br>
+            <input type="radio" name="q18" id="txt72" value="A">
+            <label for="txt72">A - Simplesmente fazer</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q19">
+    <div class="questao"> 
+    <b>19.</b> Eu gosto de...
+        <div class="radio">
+            <input type="radio" name="q19" id="txt73" value="I">
+            <label for="txt73">I - Complexidade, mesmo se confuso</label><br>
+            <input type="radio" name="q19" id="txt74" value="O">
+            <label for="txt74">O - Ordem e sistematização</label><br>
+            <input type="radio" name="q19" id="txt75" value="C">
+            <label for="txt75">C - Calor humano  e animação</label><br>
+            <input type="radio" name="q19" id="txt76" value="A">
+            <label for="txt76">A - Coisas claras e simples</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q20">
+    <div class="questao"> 
+    <b>20.</b> Tempo para mim é...
+        <div class="radio">
+            <input type="radio" name="q20" id="txt77" value="A">
+            <label for="txt77">A - Algo que detesto desperdiçar</label><br>
+            <input type="radio" name="q20" id="txt78" value="C">
+            <label for="txt78">C - Um grande ciclo</label><br>
+            <input type="radio" name="q20" id="txt79" value="C">
+            <label for="txt79">O - Uma flecha que leva ao inevitável</label><br>
+            <input type="radio" name="q20" id="txt80" value="I">
+            <label for="txt80">I - Irrelevante</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q21">
+    <div class="questao"> 
+    <b>21.</b> Se eu fosse bilionário...
+        <div class="radio">
+            <input type="radio" name="q21" id="txt81" value="C">
+            <label for="txt81">C - Faria doações para muitas entidades</label><br>
+            <input type="radio" name="q21" id="txt82" value="O">
+            <label for="txt82">O - Criaria uma poupança avantajada</label><br>
+            <input type="radio" name="q21" id="txt83" value="I">
+            <label for="txt83">I - Faria o que desse na cabeça</label><br>
+            <input type="radio" name="q21" id="txt84" value="A">
+            <label for="txt84">A - Me exibiria bastante para algumas pessoas</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q22">
+    <div class="questao"> 
+    <b>22.</b> Eu acredito que...
+        <div class="radio">
+            <input type="radio" name="q22" id="txt85" value="A">
+            <label for="txt85">A - O destino é mais importante que a jornada</label><br>
+            <input type="radio" name="q22" id="txt86" value="C">
+            <label for="txt86">C - A jornada é mais importante que o destino</label><br>
+            <input type="radio" name="q22" id="txt87" value="O">
+            <label for="txt87">O - Um centavo economizado é um centavo ganho</label><br>
+            <input type="radio" name="q22" id="txt88" value="I">
+            <label for="txt88">I - Bastam um navio e uma estrela para navegar</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q23">
+    <div class="questao"> 
+    <b>23.</b> Eu acredito também que...
+        <div class="radio">
+            <input type="radio" name="q23" id="txt89" value="A">
+            <label for="txt89">A - Aquele que hesita está perdido</label><br>
+            <input type="radio" name="q23" id="txt90" value="O">
+            <label for="txt90">O - De grão em grão a galinha enche o papo</label><br>
+            <input type="radio" name="q23" id="txt91" value="C">
+            <label for="txt91">C - O que vai, volta</label><br>
+            <input type="radio" name="q23" id="txt92" value="I">
+            <label for="txt92">I - Um sorriso ou uma careta é o mesmo para quem é cego</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q24">
+    <div class="questao"> 
+    <b>24.</b> Eu acredito ainda que...
+        <div class="radio">
+            <input type="radio" name="q24" id="txt93" value="O">
+            <label for="txt93">O - É melhor prudência do que arrependimento</label><br>
+            <input type="radio" name="q24" id="txt94" value="I">
+            <label for="txt94">I - A autoridade deve ser desafiada</label><br>
+            <input type="radio" name="q24" id="txt95" value="A">
+            <label for="txt95">A - Ganhar é fundamental</label><br>
+            <input type="radio" name="q24" id="txt96" value="C">
+            <label for="txt96">C - O coletivo é mais importante do que o individual</label><br>
+        </div>
+    </div>
+</fieldset>
+<fieldset hidden id="q25">
+    <div class="questao"> 
+    <b>25.</b> Eu penso que...
+        <div class="radio">
+            <input type="radio" name="q25" id="txt97" value="I">
+            <label for="txt97">I - Não é fácil ficar encurralado</label><br>
+            <input type="radio" name="q25" id="txt98" value="O">
+            <label for="txt98">O - É preferível olhar, antes de pular</label><br>
+            <input type="radio" name="q25" id="txt99" value="C">
+            <label for="txt99">C - Duas cabeças pensam melhor do que uma</label><br>
+            <input type="radio" name="q25" id="txt100" value="A">
+            <label for="txt100">A - Se você não tem condições de competir, não compita</label><br>
+        </div>
+    </div>
+</fieldset>
+
+<div class="resposta" id="rResposta" hidden>
+    <div class="resltado">
+    <div class="galeria">
+        <div class="col-md-3">
+        <div><!-- Esta div coloca o tamanho de uma caixa-->
+            <img src="img/ÁGUIA.jpg"/><!-- tamanho do img para ficar padrão pra todos ou coloca uma classe-->
+            <h1 id="rAguia"></h1><!--Tag de resultado colocar uma cor e tamanho que fique bonito-->
+        </div></div>
+        <div class="col-md-3">
+        <div><!-- Esta div coloca o tamanho de uma caixa-->
+            <img src="img/GATO.jpg"/>
+            <h1 id="rGato"></h1><!--Tag de resultado colocar uma cor e tamanho que fique bonito-->
+        </div></div>
+        <div class="col-md-3">
+        <div><!-- Esta div coloca o tamanho de uma caixa-->
+            <img src="img/LOBO.jpg"/><!-- tamanho do img para ficar padrão pra todos ou coloca uma classe-->
+            <h1 id="rLobo"></h1><!--Tag de resultado colocar uma cor e tamanho que fique bonito-->
+        </div></div>
+        <div class="col-md-3">
+        <div><!-- Esta div coloca o tamanho de uma caixa-->
+            <img src="img/TUBARÃO.jpg"/>
+            <h1 id="rTubarao"></h1><!--Tag de resultado colocar uma cor e tamanho que fique bonito-->
+        </div></div>
+    </div>  
+    <div class="descricao">
+        <div>
+            <div>
+        <titulo>COMPORTAMENTO</titulo></div>
+        <div class="col-md-3">
+        <div id="aguia">
+            <h2>Aguia</h2>
+
+            <p>"FAZER DIFERENTE"
+                <ul>
+                  <li>Criativo</li>
+                  <li>Intuitivo</li>
+                  <li>Foco no Futuro</li>
+                  <li>Distraido</li>
+                  <li>Curioso</li>
+                  <li>Informal/Casual</li>
+                  <li>Flexível</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="gato">
+            <h2>Gato</h2>
+
+            <p>"FAZER JUNTO"
+                <ul>
+                  <li>Sensível</li>
+                  <li>Relacionamentos</li>
+                  <li>Time</li>
+                  <li>Tradicionalistas</li>
+                  <li>Contribuição</li>
+                  <li>Busca Harmonia</li>
+                  <li>Delega Autoridade</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="lobo">
+            <h2>Lobo</h2>
+
+            <p>"FAZER CERTO"
+                <ul>
+                  <li>Detalhista</li>
+                  <li>Organizado</li>
+                  <li>Estrategista</li>
+                  <li>Busca do Conhecimento</li>
+                  <li>Pontual</li>
+                  <li>Conservador</li>
+                  <li>Previsivel</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="tubarao">
+            <h2>Tubarão</h2>
+
+            <p>"FAZER RÁPIDO"
+                <ul>
+                  <li>Senso de Urgência</li>
+                  <li>Ação, iniciativa</li>
+                  <li>Impulsivo, Prático</li>
+                  <li>Vencer Desafios</li>
+                  <li>Aqui e Agora</li>
+                  <li>Auto Suficiente</li>
+                  <li>Não gosta de delegar poder</li>
+                </ul>
+            </p>
+        </div></div>
+        </div>
+
+        <div>
+            <div>
+        <titulo>PONTOS FORTES</titulo></div>
+        <div class="col-md-3">
+        <div id="aguia">
+            <h2>Águia</h2>
+
+            <p>"IDEALIZAÇÃO"
+                <ul>
+                  <li>Provoca mudanças radicais</li>
+                  <li>Antecipar o futuro</li>
+                  <li>Criatividade</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="gato">
+            <h2>Gato</h2>
+
+            <p>"COMUNICAÇÃO"
+                <ul>
+                  <li>Manter comunicação harmoniosa</li>
+                  <li>Desenvolver e manter a cultura empresarial</li>
+                  <li>Comunicação aberta</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="lobo">
+            <h2>Lobo</h2>
+
+            <p>"OROGANIZAÇÃO"
+                <ul>
+                  <li>Passado, presente e futuro</li>
+                  <li>Consistência, conformidade e qualidade</li>
+                  <li>Lealdade e segurança</li>
+                  <li>Regras e responsabilidades</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="tubarao">
+            <h2>Tubarão</h2>
+
+            <p>"AÇÃO"
+                <ul>
+                  <li>Fazer que ocorra</li>
+                  <li>Parar com a burocracia</li>
+                  <li>Motivação</li>
+                </ul>
+            </p>
+        </div></div>
+        </div>
+
+        <div>
+            <div>
+        <titulo>PONTOS DE MELHORIAS</titulo></div>
+        <div class="col-md-3">
+        <div id="aguia">
+            <h2>Águia</h2>
+
+            <p>"IDEALIZAÇÃO"
+                <ul>
+                  <li>Provoca mudanças radicais</li>
+                  <li>Antecipar o futuro</li>
+                  <li>Criatividade</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="gato">
+            <h2>Gato</h2>
+
+            <p>
+                <ul>
+                  <li>Esconder conflitos</li>
+                  <li>Felicidade acima dos resultados</li>
+                  <li>Manipulação através dos sentimentos</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="lobo">
+            <h2>Lobo</h2>
+
+            <p>
+                <ul>
+                  <li>Dificuldades de se adaptar às mudanças</li>
+                  <li>Pode impedir o progresso</li>
+                  <li>Detalhista, estruturado e demasiado sistematizado</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="tubarao">
+            <h2>Tubarão</h2>
+
+            <p>
+                <ul>
+                  <li>Faz do modo mais fácil</li>
+                  <li>Relacionamento complicado</li>
+                </ul>
+            </p>
+        </div></div>
+        </div>
+
+
+        <div>
+            <div>
+        <titulo>MOTIVAÇÕES</titulo></div>
+        <div class="col-md-3">
+        <div id="aguia">
+            <h2>Águia</h2>
+
+            <p>
+                <ul>
+                  <li>Liberdade de expressão</li>
+                  <li>Ausência de controles rigidos</li>
+                  <li>Ambiente de trabalho descentralizado</li>
+                  <li>Liberdade para fazer exceções</li>
+                  <li>Oportunidade para delegar tarefas e detalhes</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="gato">
+            <h2>Gato</h2>
+
+            <p>
+                <ul>
+                  <li>Segurança</li>
+                  <li>Aceitação social</li>
+                  <li>Construir o consenso</li>
+                  <li>Reconhecimento da equipe</li>
+                  <li>Spervisão compreensiva</li>
+                  <li>Ambiente harmônico</li>
+                  <li>Trabalho em grupo</li>    
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="lobo">
+            <h2>Lobo</h2>
+
+            <p>
+                <ul>
+                  <li>Certeza, compreesão exata de quais são as regras</li>
+                  <li></li>
+                  <li>Conhecimento especifico de trabalho</li>
+                  <li>Ausência de riscos e erros</li>
+                  <li>Ver o produto acabado - começo meio e fim</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="tubarao">
+            <h2>Tubarão</h2>
+
+            <p>
+                <ul>
+                  <li>Liberdade para agir individualmente</li>
+                  <li>Controle das próprias atividades</li>
+                    <li>Resolver os problemas do seu jeito</li>
+                  <li>Competição individual</li>
+                    <li>Variedade de atividades</li>
+                  <li>Não ter que repetir tarefas</li>
+                </ul>
+            </p>
+        </div></div>
+        </div>
+
+        <div>
+            <div>
+        <titulo>VALORES</titulo></div>
+        <div class="col-md-3">
+        <div id="aguia">
+            <h2>Águia</h2>
+
+            <p>
+                <ul>
+                  <li>Criatividade e liberdade</li>
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="gato">
+            <h2>Gato</h2>
+
+            <p>
+                <ul>
+                  <li>Felicidade e Igualdade (cultura da empresa - pensa nos outros)</li>
+                  
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="lobo">
+            <h2>Lobo</h2>
+
+            <p>
+                <ul><li>Ordem e Controle</li>
+                  
+                </ul>
+            </p>
+        </div></div>
+        <div class="col-md-3">
+        <div id="tubarao">
+            <h2>Tubarão</h2>
+
+            <p>
+                <ul><li>Resultados</li>
+                  
+                </ul>
+            </p>
+        </div></div>
+        </div>
+            </div>  
+        </div>  
+    </div>  
+</div>  
+</div>
+<fieldset class="submit" id="form" hidden>
+    <label>Nome:</label>
+    <input type='text' name="tName" id="tName" placeholder="Siga seu Perfil">   
+    <label>Digite seu E-mail:</label>
+    <input type='email' name="tMail" id="tMail" placeholder="email@sigaseuperfil.com.br">   
+    <input type="submit" id="calc" value="Finalizar">
+</fieldset>
+    <div id="buttons-testefree"><input type="submit" id="volt" value="Voltar">
+    <input type="submit" id="prox" value="Próximo"></div>
+
+<script src="js/questoes.js"></script>
+    </div>
+    <div id="rodape-testefree">
+        <footer id="rodape-testefree1">
+            <table>
+                <td><a href="index.html"><img class="img-rodape" src="_imagens/logorodape.png"/></a>
+                    <p class="p1">&nbsp;&nbsp;&nbsp;Copyright &copy; 2017.<br/>
+                    &nbsp;&nbsp;&nbsp;Todos os direitos reservados.</p></td>
+                    <td width="30%" style="text-align:center"><a class="link-back" href="index.html"><i><p style="color:white">&#171; Volte para o site.</p></i><a></td>
+            </table>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

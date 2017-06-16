@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+#container-analise {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho3 {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.logo-analise {
+    width:15%;
+    position: relative;
+    left: 14%;
+    padding: 1em;
+}
+
+#text-analise {
+    color: #f29b13;
+    font-size: 1.4em;
+    position: relative;
+    left: 19%;
+    display: inline-block;
+}
+
+.input-ebook {
+    height: 3em;
+    width: 30%;
+    margin-left: 12%;
+}
+
+#calc {
+    background-color: #f29b13;
+    color: white;
+    font-size: 1em;
+    height: 2.2em;
+    width: 12%;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+#calc:hover {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+
+/* corpo */
+
+
+
+#form-ebook {
+    width: 68%;
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-family: 'FontLogo';
+    padding-top: 45%;
+    color: white;
+    padding-bottom: 1.5%;
+}
+
+#ebook {
+    width: 100%;
+    height: auto;
+    background-color: #f29b13;
+    background-image: url('../_imagens/img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#corpo-analise {
+    width: 70%;
+    height: auto;
+    font-size: 1.5em; 
+    background-color: #f7f7f7;
+    margin: 0 auto;
+}
+
+#img-perfis {
+    width: 24%;
+    margin-top: 14em;
+}
+
+#produtos1 {
+    width: 100%;
+    height: auto;
+    background-color: #e5e5e5;
+}
+
+
+#teste-simples {
+    width: 100%;
+    height: auto;
+    background-color: #2a2a2a;
+    padding: 2.5%;
+    border-radius: 20px;
+    margin-bottom: 1%;
+    color: white;
+}
+
+#teste-simples h1 {
+    font-size: 2em;
+    color: #f29b13;
+}
+
+#teste-simples p {
+    font-size: 1.5em;
+}
+
+#teste-completo {
+    width: 100%;
+    height: auto;
+    padding: 2.5%;
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    color: white;
+}
+
+#teste-completo h1{
+    font-size: 2em;
+    color: #f29b13;
+}
+
+#teste-completo p {
+    font-size: 1.5em;
+}
+
+#teste-completo a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+#teste-completo a:hover {
+    color: #f29b13;
+    transition: all .3s;
+}
+
+#teste-simples a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+#teste-simples a:hover {
+    color: #f29b13;
+    transition: all .3s;
+}
+
+#testes-buy button {
+    font-family: 'FontLogoB';
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #f29b13;
+    padding: 1%;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+#testes-buy button:hover {
+    background-color: #f7f7f7;
+    color: #2a2a2a;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2em;
+}
+
+
+h1 {
+    margin-right: 10px;
+}
+
+ul {
+    text-decoration: uppercase;
+    list-style: none;
+    padding: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+
+li {
+    text-align: left;
+    margin: 0;
+    padding: 3em;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+#td5 {
+    border-radius: 20px;
+    background-color: #f29b13;
+    background-image: url('../_imagens/fundo-produto1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#td6 {
+    border-radius: 20px; 
+    background-color: #f29b13;
+    background-image: url('../_imagens/fundo-produto2.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: white;
+}
+
+#btn-buy {
+    margin-left: 1em;
+    background-color: #2a2a2a;
+    color: white;
+    font-family: 'FontLogo';
+    border-radius: 10px;
+    cursor: pointer;
+    border: none; 
+    font-size: 1.5em;
+}
+
+#btn-buy1 {
+
+    background-color: #2a2a2a;
+    color: white;
+    font-family: 'FontLogo';
+    border-radius: 10px;
+    cursor: pointer;
+    border: none; 
+    font-size: 1.5em;
+}
+
+#testes-buy {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#titulo-buy {
+    font-family: 'FontLogo';
+    font-size: 3em;
+    margin: 0 auto;
+    color: #f29b13;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center; 
+}
+
+#texto-produto {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+}
+
+#container-img-perfis {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* rodapé */
+
+#rodape-analise {
+    width: 100%;
+    height: auto;
+    background-color: #2a2a2a;
+}
+
+.img-analise {
+    width: 20%;
+    position: relative;
+    left: 5.8%;
+}
+
+.p1 {
+    color: white;
+    position: relative;
+    left: 8.6%;
+    margin: 0;
+    padding: 0;
+}
+
+.link-back {
+    color: #f7f7f7;
+    font-size: 1.3em;
+}
+
+.link-back:hover {
+    color: #f29b13;
+}
+
+@media (max-width: 800px) {
+
+    .logo-analise {
+        width: 25%;
+        margin: 0;
+    }
+
+    .td8 {
+        width: 40%;
+        text-align: center;
+    }
+
+    .img-analise {
+        width: 60%;
+    }
+
+    #form-ebook {
+    width: 100%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.4em;
+    font-family: 'FontLogo';
+    padding-top: 45%;
+    color: white;
+    padding-bottom: 6%;
+   }
+
+   #calc {
+    padding: 1%;
+   }
+
+   .input-ebook {
+    margin-left: 1%;
+    height: 2.5em;
+    width: 40%;
+   }
+
+   #img-perfis {
+    width: 23%;
+   }
+
+   #corpo-analise {
+    height: auto;
+    font-size: 1.5em;
+   }
+
+   #titulo-buy {
+    font-size: 1.4em;
+   }
+
+}
